@@ -1,0 +1,62 @@
+/afs/cern.ch/user/y/yangk/Normalization/bin/mkexe.sh
+================== Compiling Analysis with Analysis =================
+
+g++ Analysis.cxx -g -O3 -Wall -Werror -std=c++17 -I/usr/include/root -Wl,--no-as-needed -L./ -L/usr/lib64/root -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic -lTree -lMinuit -lASImage -o Analysis
+
+
+checked: /afs/cern.ch/user/y/yangk/Normalization/bin/mkexe.sh Analysis done!
+
+Input file:
+/eos/lhcb/user/y/yangk/normalizationData/WholeData/WholeData.root
+
+fin is open!
+Successuflly get mc tree with name: Tuple_B02DsstarPi/DecayTree
+PlotUtils::IniColorCB creating new color
+Info in <TCanvas::Print>: png file output/a001hRecoB0_M.png has been created
+Info in <TCanvas::Print>: pdf file output/a001hRecoB0_M.pdf has been created
+Info in <TCanvas::Print>: png file output/a002hRecoDsstar_M.png has been created
+Info in <TCanvas::Print>: pdf file output/a002hRecoDsstar_M.pdf has been created
+Info in <TCanvas::Print>: png file output/a003hRecoDs_M.png has been created
+Info in <TCanvas::Print>: pdf file output/a003hRecoDs_M.pdf has been created
+Info in <TCanvas::Print>: png file output/a004hRecoSoftPhoton_PT.png has been created
+Info in <TCanvas::Print>: pdf file output/a004hRecoSoftPhoton_PT.pdf has been created
+Info in <TCanvas::Print>: png file output/a005hRecoSoftPion_PT.png has been created
+Info in <TCanvas::Print>: pdf file output/a005hRecoSoftPion_PT.pdf has been created
+Info in <TCanvas::Print>: png file output/a006hDsIPCHI2.png has been created
+Info in <TCanvas::Print>: pdf file output/a006hDsIPCHI2.pdf has been created
+Info in <TCanvas::Print>: png file output/a007hPiMinusIPCHI2.png has been created
+Info in <TCanvas::Print>: pdf file output/a007hPiMinusIPCHI2.pdf has been created
+Info in <TCanvas::Print>: png file output/a008hDsIPCHI2_OWNPV.png has been created
+Info in <TCanvas::Print>: pdf file output/a008hDsIPCHI2_OWNPV.pdf has been created
+Info in <TCanvas::Print>: png file output/a009hRecoPiMinus_PT.png has been created
+Info in <TCanvas::Print>: pdf file output/a009hRecoPiMinus_PT.pdf has been created
+Info in <TCanvas::Print>: png file output/a010hRecoB0Chi2DOF.png has been created
+Info in <TCanvas::Print>: pdf file output/a010hRecoB0Chi2DOF.pdf has been created
+Info in <TCanvas::Print>: png file output/a011hRecoB0IPF.png has been created
+Info in <TCanvas::Print>: pdf file output/a011hRecoB0IPF.pdf has been created
+Info in <TCanvas::Print>: png file output/a012hRecoDs_M_Selected.png has been created
+Info in <TCanvas::Print>: pdf file output/a012hRecoDs_M_Selected.pdf has been created
+Info in <TCanvas::Print>: png file output/a013hRecoDs_PT_Selected.png has been created
+Info in <TCanvas::Print>: pdf file output/a013hRecoDs_PT_Selected.pdf has been created
+Info in <TCanvas::Print>: png file output/a014hRecoDs_IPChi2.png has been created
+Info in <TCanvas::Print>: pdf file output/a014hRecoDs_IPChi2.pdf has been created
+Info in <TCanvas::Print>: png file output/a015hRecoDsstar_PT_Selected.png has been created
+Info in <TCanvas::Print>: pdf file output/a015hRecoDsstar_PT_Selected.pdf has been created
+Info in <TCanvas::Print>: png file output/a016hRecoB0_PT_Selected.png has been created
+Info in <TCanvas::Print>: pdf file output/a016hRecoB0_PT_Selected.pdf has been created
+Info in <TCanvas::Print>: png file output/a017hRecoDs_M_Selected_Resonance.png has been created
+Info in <TCanvas::Print>: pdf file output/a017hRecoDs_M_Selected_Resonance.pdf has been created
+Info in <TCanvas::Print>: png file output/a018hnCandidate.png has been created
+Info in <TCanvas::Print>: pdf file output/a018hnCandidate.pdf has been created
+Info in <TCanvas::Print>: png file output/b001hSoftphotonPtVSConeR2.png has been created
+Info in <TCanvas::Print>: pdf file output/b001hSoftphotonPtVSConeR2.pdf has been created
+Info in <TCanvas::Print>: png file output/b002hDsDalitzPlotKKVSKPi.png has been created
+Info in <TCanvas::Print>: pdf file output/b002hDsDalitzPlotKKVSKPi.pdf has been created
+Info in <TCanvas::Print>: png file output/b003hDsDalitzPlotKKVSKPi_Selected.png has been created
+Info in <TCanvas::Print>: pdf file output/b003hDsDalitzPlotKKVSKPi_Selected.pdf has been created
+Info in <TCanvas::Print>: png file output/c001hRecoDsstar_M_Selected.png has been created
+Info in <TCanvas::Print>: pdf file output/c001hRecoDsstar_M_Selected.pdf has been created
+Info in <TCanvas::Print>: png file output/c002hRecoB0_M_Selected.png has been created
+Info in <TCanvas::Print>: pdf file output/c002hRecoB0_M_Selected.pdf has been created
+Info in <TCanvas::Print>: png file output/c003hRecoDsstar_M_SelectedFinal.png has been created
+Info in <TCanvas::Print>: pdf file output/c003hRecoDsstar_M_SelectedFinal.pdf has been created
