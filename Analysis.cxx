@@ -1,5 +1,5 @@
-#include "AnaIO.h"
-#include "AnaCut.h"
+#include "include/AnaIO.h"
+#include "include/AnaCut.h"
 
 TVector3 GetMomVectLab(const double & Px, const double & Py, const double & Pz)
 {
@@ -148,34 +148,7 @@ void anaRec(const TString finName, TList *lout, const TString tag, const int nEn
           }
         }
       }
-
-      /*if(AnaIO::Ds_IPCHI2_OWNPV > 300 && LogDsCHI2IP > 4){ // Ds IPCHI2 selections
-        AnaIO::hRecoDsstar_PT_Selected->Fill(AnaIO::Dsstar_PT);
-        AnaIO::hRecoB0_PT_Selected->Fill(AnaIO::B0_PT);
-        if(r2 < 0.4 && AnaIO::gamma_PT < 500 && AnaIO::gamma_CL > 0.55){ // Soft photon selections
-          AnaIO::hRecoDsstar_M_Selected->Fill(AnaIO::Dsstar_M);
-          if(LogPiMinusCHI2IP > 4 && AnaIO::PiMinus_PT > 1000 && AnaIO::PiMinus_ProbNNpi > 0.55 && B0CHI2perNDF > 3 && AnaIO::B0_IP_OWNPV > 0.02) {
-              AnaIO::hRecoB0_M_Selected->Fill(AnaIO::B0_M);
-              AnaIO::hRecoDsstar_M_SelectedFinal->Fill(AnaIO::Dsstar_M);
-          }
-        }
-      }*/
-    }
-
-
-    //double deltaETA_B = AnaIO::B0_ETA - AnaIO::Ds_ETA;
-    //double deltaPHI_B = AnaIO::B0_PHI - AnaIO::Ds_PHI;
-    //double r2_B = deltaETA_B*deltaETA_B + deltaPHI_B*deltaPHI_B;
-
-
-    if(r2 < 0.4 && AnaIO::gamma_PT < 500 && AnaIO::gamma_CL > 0.55 && LogDsCHI2IP > 4){
-      /*if(LogPiMinusCHI2IP > 4 && AnaIO::PiMinus_PT > 1000 && AnaIO::Piplus_ProbNNpi > 0.55 && r2_B < 0.4 && B0CHI2perNDF > 3 && AnaIO::B0_IP_OWNPV > 0.02 &&
-        AnaIO::Piplus_PT > 250 && AnaIO::Kplus_PT > 250 && AnaIO::Kminus_PT > 250) 
-      {*/ 
-        //AnaIO::hRecoDsstar_M_Selected->Fill(AnaIO::Dsstar_M);
-        //AnaIO::hRecoB0_M_Selected->Fill(AnaIO::B0_M);
-      //}
-    }    
+    }   
   }
 }
 

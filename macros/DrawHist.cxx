@@ -355,7 +355,7 @@ void DrawBs0(TH1D* hBs0Mass, TString tag){
 
 void DrawHist()
 {
-    TString finName = "./anaHist.root";
+    TString finName = "../output/outana.root";
 
     TFile *file = TFile::Open(finName);
 
@@ -375,8 +375,8 @@ void DrawHist()
     TCanvas * c0 = new TCanvas("c0", "", 1200, 800);
     SetPad(c0);
     DrawDs(hDsMass_BeforeResCut,hDsMass_AfterResCut,"Ds");
-    c0->Print("Hists/Compare_DsMass.pdf");
-    c0->Print("Hists/Compare_DsMass.png");
+    c0->Print("../Hists/Compare_DsMass.pdf");
+    c0->Print("../Hists/Compare_DsMass.png");
 
     // Draw Ds* mass
     TH1D * hDsstarMass = (TH1D*) file->Get("mc/c001hRecoDsstar_M_Selected;1");
@@ -387,8 +387,8 @@ void DrawHist()
     TCanvas * c1 = new TCanvas("c1", "", 1200, 800);
     SetPad(c1);
     DrawDsstar(hDsstarMass,"Dsstar");
-    c1->Print("Hists/DsstarMass.pdf");
-    c1->Print("Hists/DsstarMass.png");
+    c1->Print("../Hists/DsstarMass.pdf");
+    c1->Print("../Hists/DsstarMass.png");
 
     // Draw Bs0 mass
     TH1D * hBs0Mass = (TH1D*) file->Get("mc/c002hRecoB0_M_Selected;1");
@@ -399,8 +399,8 @@ void DrawHist()
     TCanvas * c2 = new TCanvas("c2", "", 1200, 800);
     SetPad(c2);
     DrawBs0(hBs0Mass,"Bs0");
-    c2->Print("Hists/Bs0Mass.pdf");
-    c2->Print("Hists/Bs0Mass.png");
+    c2->Print("../Hists/Bs0Mass.pdf");
+    c2->Print("../Hists/Bs0Mass.png");
 
 
 }
